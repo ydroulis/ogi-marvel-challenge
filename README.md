@@ -1,4 +1,4 @@
-# marvel
+# Ogi marvel challenge
 
 App that contains a collection of Marvel characters and some relevant informations.
 
