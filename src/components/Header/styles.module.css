@@ -1,0 +1,61 @@
+.headerContainer{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+}
+
+.logo{
+    width: 30px;
+    height: 24px;
+}
+
+.profile{
+    display: flex;
+    gap: 16px;
+}
+
+.info{
+    height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-size: .75rem;
+    color: #555555;
+
+    @media(min-width: 1024px) {
+        font-size: .875rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.sasn-caption-bold{
+    font-weight: 700 !important;
+}
+
+.avatar{
+    width: 32px;
+    height: 32px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F5F5F5;
+
+    font-size: .938rem;
+    color: #555555;
+
+    border-radius: 4px;
+}

@@ -1,0 +1,78 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    background-color: #ffffff;
+
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
+
+    border-radius: 4px;
+
+    box-shadow: 0px 0px 5px #00000033;
+
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0px 0px 5px #000000;
+    }
+
+    @media(min-width: 1024px) {
+        padding: 1.25rem 1.5rem 1.25rem 1.5rem;
+    }
+}
+
+.img{
+    width: 48px;
+    height: 48px;
+
+    border-radius: 4px;
+
+    margin-right: 1.5rem;
+}
+
+.characterName{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    font-size: .875rem;
+    font-weight: 700;
+
+    @media(min-width: 1024px) {
+        font-size: 1rem;
+
+        width: 33%;
+    }
+}
+
+.characterInfo{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.characterComics{
+    display: none;
+
+    @media(min-width: 1024px) {
+        display: block;
+
+        width: 33%;
+    }
+}
+
+.characterEvents{
+    display: none;
+
+    @media(min-width: 1024px) {
+        display: block;
+
+        width: 33%;
+    }
+}

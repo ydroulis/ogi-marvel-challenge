@@ -1,0 +1,68 @@
+.container{
+    width: 100%
+}
+
+.labels{
+    width: 100%;
+
+    display: flex;
+
+    margin-top: .803rem;
+    margin-bottom: .563rem;
+    
+    color: #8E8E8E;
+    font-size: .75rem;
+
+    @media(min-width: 1024px) {
+        display: flex;
+        gap: 16px;
+        margin-top: 1.25rem;
+
+        padding: 0rem 1.5rem 0rem 1.5rem;
+        box-sizing: border-box;
+    }
+
+}
+
+.labelCharacter{
+    margin-left: 5.5rem;
+    
+    @media(min-width: 1024px) {
+        width: 33%;
+
+        margin-left: 0rem;
+    }
+}
+
+.labelComics{
+    display: none;
+    
+    @media(min-width: 1024px) {
+        width: 33%;
+
+        display: block;
+
+        margin-left: 0rem;
+    }
+}
+
+.labelEvents{
+    display: none;
+    
+    @media(min-width: 1024px) {
+        width: 33%;
+    
+        display: block;
+
+        margin-left: 0rem;
+    }
+}
+
+.list{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+

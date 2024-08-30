@@ -1,0 +1,165 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 79px;
+
+    background-color: #ffffff;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media(min-width: 1024px) {
+        gap: 16px;
+        margin: 0rem 1rem;
+    }
+}
+
+.btn{
+    width: 32px;
+    height: 32px;
+
+    border-radius: 4px;
+    
+    font-size: 0.875rem;
+    color: #555555;
+    
+    border: 1px solid #E5E5E5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    &:hover{
+        background-color: #167ABC;
+        color: #ffffff;
+    }
+
+    @media(min-width: 1024px) {
+        width: 40px;
+    }
+}
+
+.active{
+    width: 32px;
+    height: 32px;
+    
+    border-radius: 4px;
+    
+    font-size: 0.875rem;
+    color: #ffffff;
+    
+    background-color: #167ABC;
+    border: 1px solid #167ABC;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+
+    @media(min-width: 1024px) {
+        width: 40px;
+    }
+}
+
+.next, .nextAll, .back, .backAll{
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    cursor: pointer;
+
+    background-color: transparent;
+}
+
+.arrowRight {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #8E8E8E;
+    border-top: 2px solid #8E8E8E;
+    transform: rotate(45deg);
+
+    &:hover{
+        border-color: #167ABC;
+    }
+}
+
+.doubleArrowRight {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #8E8E8E;
+    border-top: 2px solid #8E8E8E;
+    transform: rotate(45deg);
+}
+
+.doubleArrowRight::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -4px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #8E8E8E;
+    border-top: 2px solid #8E8E8E;
+    transform: rotate(0deg);
+}
+
+.arrowLeft {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #8E8E8E;
+    border-top: 2px solid #8E8E8E;
+    transform: rotate(225deg);
+
+    &:hover{
+        border-color: #167ABC;
+    }
+}
+
+.doubleArrowLeft {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #8E8E8E;
+    border-top: 2px solid #8E8E8E;
+    transform: rotate(225deg);
+}
+
+.doubleArrowLeft::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -4px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #8E8E8E;
+    border-top: 2px solid #8E8E8E;
+    transform: rotate(0deg);
+}
+
+.doubleArrowRight:hover,
+.doubleArrowRight:hover::before{
+    border-color: #167ABC;
+}
+
+.doubleArrowLeft:hover,
+.doubleArrowLeft:hover::before{
+    border-color: #167ABC;
+}
